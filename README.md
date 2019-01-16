@@ -283,8 +283,7 @@ activate the virtual environment: `. env/bin/activate`.
 
 - Change the ownership of the project directories: `sudo chown -R www-data:www-data catalog/`.
 - Restart Apache again: `sudo service apache2 restart`.
-- Visit site at http://18.184.23.10
- or http://ec2-18-184-23-10.eu-central-1.compute.amazonaws.com/.
+- Visit site at http://ec2-18-184-23-10.eu-central-1.compute.amazonaws.com/.
 
 
 ## Helpful Resources
