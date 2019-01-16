@@ -303,4 +303,4 @@ activate the virtual environment: `. env/bin/activate`.
 
 - [Working with Virtual Environments](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/#working-with-virtual-environments)
 
-[Install and configure mod_wsgi on Ubuntu 16.04] (https://devops.profitbricks.com/tutorials/install-and-configure-mod_wsgi-on-ubuntu-1604-1/) -
+[Install and configure mod_wsgi on Ubuntu 16.04] (https://devops.profitbricks.com/tutorials/install-and-configure-mod_wsgi-on-ubuntu-1604-1/)
