@@ -99,6 +99,7 @@ sudo apt-get upgrade
 ### Step 10: Install and configure Apache 
 - While logged in as `grader`, install Apache: `sudo apt-get install apache2`.
 
+install the python mod_wsgi package:
  `sudo apt-get install libapache2-mod-wsgi`.
 - Enable `mod_wsgi` using: `sudo a2enmod wsgi`.
 
@@ -238,9 +239,6 @@ following lines to configure the virtual host:
   ```
 
 - Enable virtual host: `sudo a2ensite catalog`. 
-  To activate the new configuration, you need to run:
-    service apache2 reload
-  ```
 
 - Reload Apache: `sudo service apache2 reload`.
 
@@ -268,9 +266,6 @@ following lines to configure the virtual host:
 
 - Restart Apache: `sudo service apache2 restart`.
 
-**Resource** 
-- Flask documentation, [Working with Virtual Environments](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/#working-with-virtual-environments)
-
 
 ### Step 14.4: Set up the database 
 - From the `/var/www/catalog/catalog/` directory, 
@@ -289,7 +284,23 @@ activate the virtual environment: `. env/bin/activate`.
 - Change the ownership of the project directories: `sudo chown -R www-data:www-data catalog/`.
 - Restart Apache again: `sudo service apache2 restart`.
 - Visit site at http://18.184.23.10
- or http://http://ec2-18-184-23-10.eu-central-1.compute.amazonaws.com/.
+ or http://ec2-18-184-23-10.eu-central-1.compute.amazonaws.com/.
 
 
 ## Helpful Resources
+
+
+- [How to Create a Server on Amazon Lightsail](https://serverpilot.io/community/articles/how-to-create-a-server-on-amazon-lightsail.html).
+
+
+- [UFW - Uncomplicated Firewall](https://help.ubuntu.com/community/UFW).
+- [How to install and use Uncomplicated Firewall in Ubuntu](https://www.techrepublic.com/article/how-to-install-and-use-uncomplicated-firewall-in-ubuntu/).
+
+
+- [How To Add and Delete Users on an Ubuntu 14.04 VPS](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps)
+
+- [How To Set Up SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2).
+
+- [Working with Virtual Environments](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/#working-with-virtual-environments)
+
+[Install and configure mod_wsgi on Ubuntu 16.04] (https://devops.profitbricks.com/tutorials/install-and-configure-mod_wsgi-on-ubuntu-1604-1/) -
